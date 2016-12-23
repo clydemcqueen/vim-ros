@@ -3,7 +3,7 @@ This plugin activates itself for files that belong to some ROS package.
 Features
 ========
 
-Sets `&makeprg` to `catkin_make`, `catkin build`, or `rosmake <package-name>` so
+Sets `&makeprg` to `catkin_make_isolated`, `catkin build`, or `rosmake <package-name>` so
 that the package, to which the file being edited belongs, could be built with
 `:make`.
 
@@ -89,7 +89,7 @@ Options
 
 - `g:ros_make` [current|all] Controls which package to build
 - `g:ros_build_system` [catkin|rosbuild|catkin-tools] Which build system to use
-- `g:ros_catkin_make_options` Additional options for catkin_make (i.e '-j4 -DCMAKE_BUILD_TYPE=Debug' ...)
+- `g:ros_catkin_make_options` Additional options for catkin_make_isolated (e.g. '-j4 -DCMAKE_BUILD_TYPE=Debug' ...)
 
 Contributing
 ============

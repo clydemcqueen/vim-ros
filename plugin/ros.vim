@@ -36,7 +36,7 @@ endif
 
 " Controls which build system to use
 " Valid options:
-"   'catkin' : build with catkin_make
+"   'catkin' : build with catkin_make_isolated
 "   'rosbuild' : build with rosmake
 "   'catkin-tools': build with 'catkin build'
 if !exists('g:ros_build_system')
